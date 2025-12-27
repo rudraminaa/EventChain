@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:eventchain/screens/splash/splashScreen.dart';
+import 'package:eventchain/screens/splash/splash_screen.dart';
 
 void main() {
   runApp(const EventChainApp());
