@@ -2,6 +2,7 @@ import 'package:eventchain/utils/size_utils.dart';
 import 'package:eventchain/utils/ui_helper.dart';
 import 'google_button.dart';
 import 'package:flutter/material.dart';
+import 'logo.dart';
 
 class placeHolder extends StatelessWidget {
   const placeHolder({super.key});
@@ -28,26 +29,7 @@ class placeHolder extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               SizedBox(height: SizeUtils.height(context, 0.05)),
-              SizedBox(
-                height: SizeUtils.height(context, 0.08),
-                child: Row(
-                  spacing: SizeUtils.width(context, 0.05),
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    SizedBox(
-                      height: SizeUtils.height(context, 0.08),
-                      width: SizeUtils.width(context, 0.15),
-                      child: Image.asset("assets/images/appLogo.png"),
-                    ),
-                    UiHelper.customText(
-                      text: "EventChain",
-                      textColor: 0xFF9810FA,
-                      fontWeight: FontWeight.bold,
-                      fontSize: SizeUtils.text(context, 0.07),
-                    ),
-                  ],
-                ),
-              ),
+              logo(),
               SizedBox(height: SizeUtils.height(context, 0.01)),
               UiHelper.customText(
                 text: "Welcome back! Sign in to continue",
